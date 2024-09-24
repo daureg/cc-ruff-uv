@@ -19,10 +19,18 @@ repos:
     hooks:
       - id: mypy
         name: mypy
-        entry: poetry run mypy
+        entry: poetry run mypy src
         language: system
-        files: ^src/.*\.py$
-        require_serial: true
+        types:
+          - python
+        pass_filenames: false
+      - id: pytest
+        name: pytest
+        entry: make local-tests
+        language: system
+        types:
+          - python
+        pass_filenames: false
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
