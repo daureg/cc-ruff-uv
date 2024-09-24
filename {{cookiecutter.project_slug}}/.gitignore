@@ -1,0 +1,9 @@
+.*
+!.gitignore
+!.pre-commit-config.yaml
+
+__pycache__/
+dist/
+coverage-reports/
+xunit-reports/
+htmlcov/
