@@ -2,7 +2,7 @@
 minimum_pre_commit_version: "3.0"
 fail_fast: false
 default_language_version:
-  python: python3.11
+  python: python{{cookiecutter.minimum_python_version}}
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.6.7

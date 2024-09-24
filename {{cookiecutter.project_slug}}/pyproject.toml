@@ -17,7 +17,7 @@ name = "PyPI"
 priority = "primary" # "supplemental" if using nexus
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">={{cookiecutter.minimum_python_version}}"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.11.2"
@@ -30,7 +30,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 line-length = 88
-target-version = "py311"
+target-version = "py{{cookiecutter.minimum_python_version.replace('.', '')}}"
 exclude = []
 [tool.ruff.format]
 preview = true
@@ -73,6 +73,6 @@ include = ["src/", "tests/"]
 exclude = [
     "**/__pycache__",
 ]
-pythonVersion = "3.11"
+pythonVersion = "{{cookiecutter.minimum_python_version}}"
 pythonPlatform = "Linux"
 typeCheckingMode = "standard"

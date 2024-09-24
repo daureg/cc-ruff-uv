@@ -2,6 +2,7 @@
   "project_name": "simple-py311",
   "project_short_description": "Simple python 3.11 template with ruff",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "minimum_python_version": "3.11",
   "author": "Géraud Le Falher <geraud.le.falher@zalando.de>"
 }
 
