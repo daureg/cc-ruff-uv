@@ -4,11 +4,11 @@
 
 ## How to contribute
 
-You need [poetry](https://python-poetry.org/docs/#installation) and [pre-commit](https://pre-commit.com/#install) installed.
+You need [`uv`](https://docs.astral.sh/uv/getting-started/installation/) and [pre-commit](https://pre-commit.com/#install) installed.
 
 After cloning the repository, run the following commands:
 ```shell
-poetry install --sync --with dev
+uv sunc -U
 pre-commit install
 pre-commit run --all-files
 make local-tests

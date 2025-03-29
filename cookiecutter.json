@@ -1,8 +1,8 @@
 {
-  "project_name": "simple-py311",
-  "project_short_description": "Simple python 3.11 template with ruff",
+  "project_name": "simple-ruff-uv",
+  "project_short_description": "Simple python template with ruff and uv",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-  "minimum_python_version": "3.11",
-  "author": "Géraud Le Falher <geraud.le.falher@zalando.de>"
+  "minimum_python_version": "3.12",
+  "author_name": "Géraud Le Falher",
+  "author_email": "geraud.le.falher@zalando.de"
 }
-
