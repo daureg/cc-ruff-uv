@@ -53,6 +53,7 @@ ignore = [
     "W191",
 ]
 [tool.ruff.lint.extend-per-file-ignores]
+"noxfile.py" = ["D"]
 "tests/**/*.py" = [
     "S101", # asserts allowed in tests...
     "D100", # https://google.github.io/styleguide/pyguide.html#3821-test-modules
