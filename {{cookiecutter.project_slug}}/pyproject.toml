@@ -19,7 +19,7 @@ dependencies = []
 dev = [
     "mypy>=1.15.0",
     "pygments>=2.19.1",
-    "pytest-cov>=6.0.0",
+    "pytest-cov>=6.1.1",
 ]
 
 [build-system]
@@ -75,6 +75,9 @@ junit_family="legacy"
 [tool.mypy]
 # https://mypy.readthedocs.io/en/stable/existing_code.html#introduce-stricter-options
 strict = true
+exclude = [
+    'noxfile\.py$',
+]
 [[tool.mypy.overrides]]
 module = []
 ignore_missing_imports = true
@@ -86,4 +89,4 @@ exclude = [
 ]
 pythonVersion = "{{cookiecutter.minimum_python_version}}"
 pythonPlatform = "Linux"
-typeCheckingMode = "standard"
+typeCheckingMode = "basic"
